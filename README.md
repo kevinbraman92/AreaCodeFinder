@@ -11,6 +11,10 @@ Input Sample:
 To run the script simply double click on the 'RunAreaCodeFinder.bat' file. This will execute the script and generate an output file with today's date. 
 
 
+<img width="171" height="100" alt="image" src="https://github.com/user-attachments/assets/081d711b-f1bd-45a3-9722-97ddd7b65a79" />
+
+
+
 Output Sample:
 
 <img width="605" height="263" alt="image" src="https://github.com/user-attachments/assets/ce0be928-8cd9-441b-ae77-f1f4ca041cc7" />
