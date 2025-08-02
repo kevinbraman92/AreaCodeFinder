@@ -1,7 +1,16 @@
+import os
 import pandas as pd
 from datetime import datetime
 
 DATE_STR = datetime.now().strftime('%m.%d.%y')
+
+def inputFileValidator():
+    if not os.path.exists('input.xlsx'):
+        print("input.xlsx not found! Creating a new one with a sample row...")
+        df = pd.DataFrame({'Phone': ['123-456-7890']})
+        df.to_excel('input.xlsx', index=False, engine='openpyxl')
+        print("Created 'input.xlsx'. Please fill in your phone numbers and re-run the script.")
+        exit() 
 
 def areaCodeFinder():
 
