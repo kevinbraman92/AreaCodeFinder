@@ -1,5 +1,5 @@
 # AreaCodeFinder
-A script that takes phone numbers and returns data about their area code using information from the North American Numbering Plan Administrator
+A script that takes phone numbers and returns data about their area code using information from the North American Numbering Plan Administrator.
 
 Enter the phone number(s) you wish to check under the column titled 'Phone' in the 'input.xlsx' file. The program takes into account different number formats. 
 
