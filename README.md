@@ -7,7 +7,9 @@ Input Sample:
 
 <img width="141" height="244" alt="image" src="https://github.com/user-attachments/assets/bfedcbe8-2663-4b89-823a-2452fa97fb90" />
 
+
 To run the script simply double click on the 'RunAreaCodeFinder.bat' file. This will execute the script and generate an output file with today's date. 
+
 
 Output Sample:
 
