@@ -39,11 +39,12 @@ def areaCodeFinder():
     #Clean Primary Key
     npa_report_df['NPA_ID'] = npa_report_df['NPA_ID'].astype(str)
 
-    #Peform Lookup
+    #Perform Lookup
     merged_df = input_df.merge(npa_report_df[['NPA_ID', 'LOCATION', 'COUNTRY', 'IN_SERVICE']], left_on='AreaCode', right_on='NPA_ID', how='left')
 
     #Write File As CSV
     merged_df.to_csv(f'output {DATE_STR}.csv', index=False)
 
     #Script Complete
+
     print(f"Script complete! File save as 'output {DATE_STR}.csv'.")
