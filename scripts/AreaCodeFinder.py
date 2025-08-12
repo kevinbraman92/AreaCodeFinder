@@ -1,8 +1,13 @@
 import os
+import sys
 import pandas as pd
+from pathlib import Path
 from datetime import datetime
 
 DATE_STR = datetime.now().strftime('%m.%d.%y')
+ROOT = Path(__file__).resolve().parent.parent
+INPUT_CSV= ROOT / "input" / 'input.csv'
+REPORT_DIR = ROOT / "report" / 'npa_report.csv'
 
 def inputFileValidator():
     if not os.path.exists('input.xlsx'):
@@ -17,8 +22,8 @@ def areaCodeFinder():
     print("Starting script...")
 
     #Open Files
-    input_df = pd.read_excel("input.xlsx", engine='openpyxl')
-    npa_report_df = pd.read_csv("report/npa_report.csv", skiprows=1)
+    input_df = pd.read_csv(INPUT_CSV, low_memory=False)
+    npa_report_df = pd.read_csv(REPORT_DIR, skiprows=1, low_memory=False)
 
     #Correcting Input Header
     input_df.columns = input_df.columns.str.strip()
