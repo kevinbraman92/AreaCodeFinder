@@ -1,8 +1,9 @@
 import AreaCodeFinder
 
+
 def main():
-    AreaCodeFinder.inputFileValidator()
-    AreaCodeFinder.areaCodeFinder()
+    AreaCodeFinder.main()
+
 
 if __name__ == "__main__":
     main()
